@@ -1,7 +1,234 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <?php include 'personal_data.php'; ?>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            padding-bottom: 50px;
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: #2b2d42 !important;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #8d99ae !important;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+
+        .card-header {
+            background-color: #001d3d;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .card-body ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card-body ul li:before {
+            content: "\2022";
+            color: #001d3d;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            color: #343a40;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            background-color: #001d3d;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+        h5 {
+            color: black;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello Yall</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#">Resume</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#personal-info">Personal Information</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="profile-pic.png" alt="Resume Picture" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Carl Santiago</h3>
+                        <p class="card-text">Computer Science Student</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/crlsntg/" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/CarlSntg" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div id="bio" class="card">
+                    <div class="card-header">
+                        Bio
+                    </div>
+                    <div class="card-body">
+                        <p class='card-text'>A highly motivated computer science student at 
+                            Far Eastern University Institute of Technology. 
+                            Proficient in several programming languages and experienced in software engineering 
+                            and web development. Active member and officer of the Association of Computing Machinery and constantly 
+                            seeking new challenges to expand skills and knowledge. Passionate about innovation 
+                            and eager to contribute to the technology industry.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="education" class="card mt-4">
+                    <div class="card-header">
+                        Education
+                    </div>
+                    <div class="list-group">
+                        <a href='#' class='list-group-item list-group-item-action'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1 bold'>Bachelor of Science in Computer Science with Specialization in Software Engineering</h5>
+                            </div>";
+                        <p class='mb-1'>Far Eastern University Institute of Technology</p>
+                        </a>
+                        <a href='#' class='list-group-item list-group-item-action'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1 bold'>Senior High School</h5>
+                            </div>";
+                        <p class='mb-1'>Jesus Is Lord Colleges Foundation</p>
+                        </a>
+                        <a href='#' class='list-group-item list-group-item-action'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1 bold'>Junior High School</h5>
+                            </div>";
+                        <p class='mb-1'>Jesus Is Lord Colleges Foundation</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="certifications" class="card mt-4">
+                    <div class="card-header">
+                        Certifications
+                    </div>
+                    <div class="list-group">
+                        <a href='#' class='list-group-item list-group-item-action'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1 bold'>Information Technology Specialist in Python</h5>
+                            </div>
+                        <p class='mb-1'>CertNexus</p>
+                        </a>
+                        <a href='#' class='list-group-item list-group-item-action'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1 bold'>Information Technology Specialist in Python</h5>
+                            </div>
+                        <p class='mb-1'>CertNexus</p>
+                        </a>
+                        <a href='#' class='list-group-item list-group-item-action'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1 bold'>Responsive Web Design</h5>
+                            </div>
+                        <p class='mb-1'>FreeCodeCamp</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div id="personal-info" class="card mt-4">
+                    <div class="card-header">
+                        Personal Information
+                    </div>
+                    <div class="list-group">
+                        <a href='#' class='list-group-item list-group-item-action'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1 bold'>Email</h5>
+                            </div>";
+                        <p class='mb-1'>carlsantiago0514@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
